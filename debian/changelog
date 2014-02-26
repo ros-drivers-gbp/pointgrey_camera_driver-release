@@ -1,0 +1,29 @@
+ros-hydro-pointgrey-camera-driver (0.9.0-0precise) precise; urgency=high
+
+  * Remove pgrimaging from all USB devices.
+  * Rename standalone executables, fix priority of udev rules for USB cameras, parameterize example launchfiles better.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Wed, 26 Feb 2014 05:00:00 -0000
+
+ros-hydro-pointgrey-camera-driver (0.0.2-0precise) precise; urgency=high
+
+  * Permissions to world-readable for firewire devices.
+  * Add nodelet manager to example launch.
+  * Reorganize bumblebee example launcher.
+  * Fix installing to i386.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Wed, 26 Feb 2014 05:00:00 -0000
+
+ros-hydro-pointgrey-camera-driver (0.0.1-0precise) precise; urgency=high
+
+  * Fetch FlyCap dependency from pygrey.com at configure time.
+  * Add PGR udev rules from the flycap installer.
+  * Catkinize main package.
+  * Added code for a ROS-compatible point-grey camera driver based on flycap.
+  * Contributors: Chad Rockey, Dave Bradley, Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Sun, 23 Feb 2014 05:00:00 -0000
+
+
