@@ -2,6 +2,9 @@
 Changelog for package image_exposure_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.2 (2014-02-26)
+------------------
+
 0.0.1 (2014-02-23)
 ------------------
 * Initial release to Hydro
