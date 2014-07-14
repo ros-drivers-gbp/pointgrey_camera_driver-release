@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>pointgrey_camera_driver</name>
-  <version>0.9.1</version>
+  <version>0.9.2</version>
   <description>Point Grey camera driver based on libflycapture2.</description>
 
   <maintainer email="mpurvis@clearpathrobotics.com">Mike Purvis</maintainer>
@@ -24,6 +24,7 @@
   <build_depend>dynamic_reconfigure</build_depend>
   <build_depend>driver_base</build_depend>
   <build_depend>diagnostic_updater</build_depend>
+  <build_depend>dpkg</build_depend>
   <run_depend>roscpp</run_depend>
   <run_depend>nodelet</run_depend>
   <run_depend>sensor_msgs</run_depend>
