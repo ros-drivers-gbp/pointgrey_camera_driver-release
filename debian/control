@@ -1,0 +1,12 @@
+Source: ros-hydro-pointgrey-camera-driver
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), dpkg, libraw1394-dev, libusb-1.0-0-dev, ros-hydro-camera-info-manager, ros-hydro-catkin, ros-hydro-diagnostic-updater, ros-hydro-driver-base, ros-hydro-dynamic-reconfigure, ros-hydro-image-exposure-msgs, ros-hydro-image-transport, ros-hydro-nodelet, ros-hydro-roscpp, ros-hydro-roslint, ros-hydro-sensor-msgs, ros-hydro-wfov-camera-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-hydro-pointgrey-camera-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libraw1394-dev, libusb-1.0-0-dev, ros-hydro-camera-info-manager, ros-hydro-diagnostic-updater, ros-hydro-driver-base, ros-hydro-dynamic-reconfigure, ros-hydro-image-exposure-msgs, ros-hydro-image-transport, ros-hydro-nodelet, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-wfov-camera-msgs
+Description: Point Grey camera driver based on libflycapture2.
