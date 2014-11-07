@@ -1,3 +1,28 @@
+## pointgrey_camera_driver (hydro) - 0.11.0-0
+
+The packages in the `pointgrey_camera_driver` repository were released into the `hydro` distro by running `/usr/local/bin/bloom-release -r hydro -t hydro pointgrey_camera_driver` on `Fri, 07 Nov 2014 18:47:36 -0000`
+
+These packages were released:
+- `image_exposure_msgs`
+- `pointgrey_camera_driver`
+- `statistics_msgs`
+- `wfov_camera_msgs`
+
+Version of package(s) in repository `pointgrey_camera_driver`:
+- upstream repository: https://github.com/ros-drivers/pointgrey_camera_driver.git
+- release repository: https://github.com/ros-drivers-gbp/pointgrey_camera_driver-release.git
+- rosdistro version: `0.10.0-0`
+- old version: `0.10.0-0`
+- new version: `0.11.0-0`
+
+Versions of tools used:
+- bloom version: `0.5.12`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.10.32`
+- rosdistro version: `0.3.6`
+- vcstools version: `0.1.35`
+
+
 ## pointgrey_camera_driver (indigo) - 0.11.0-0
 
 The packages in the `pointgrey_camera_driver` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release -r indigo -t indigo pointgrey_camera_driver` on `Fri, 07 Nov 2014 18:39:57 -0000`
