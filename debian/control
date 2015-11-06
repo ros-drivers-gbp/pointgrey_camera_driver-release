@@ -1,0 +1,12 @@
+Source: ros-jade-image-exposure-msgs
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-message-generation, ros-jade-statistics-msgs, ros-jade-std-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-jade-image-exposure-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-message-runtime, ros-jade-statistics-msgs, ros-jade-std-msgs
+Description: Messages related to the Point Grey camera driver.
