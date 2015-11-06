@@ -2,6 +2,38 @@
 Changelog for package pointgrey_camera_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.12.1 (2015-11-06)
+-------------------
+* Depend on curl to pull in ca-certificates.
+* Specify color coding. Without the format7 color coding specified, the driver will crash.
+* Adds the vendor ID for Startech-brand Firewire interface cards.  This is necessary for accessing the camera(s) connected through the card.
+* Removing check for number of subscribers to publish raw image.
+* Support cameras with high framerate.
+* Contributors: Jeff Schmidt, Konrad Banachowicz, Mike Purvis
+
+0.12.0 (2015-04-22)
+-------------------
+* Remove dependency on driver_base.
+  Define SensorLevels constants directly in the relevant places, rather
+  than using the external message for this.
+* Improve list_cameras by outputing more information about it
+  The previous list_cameras only output 1 serial number which is
+  not very informative. The improved one will print serial, model,
+  vendor, sensor, resolution, color and firmware version.
+* Add auto white balance and fix not able to write white balance
+  Fix the problem of not being able to set white balance using Property.
+  When trying to set white balance on my FL3-U3-13E4C-C, both this ros
+  driver and flycap software cannot set the white balance naturally.
+  After playing around with the flycap software, I found that I have
+  to set the highest bit of register 80C (which is white balance) to 1
+  to enable this feature. So I modified the original SetWhiteBalance to
+  use WriteRegister directly. And add support for auto white balance.
+* Framerate improvements.
+* Support downloading the SDK for ARM.
+* Downgrade flycaptyre SDK to 2.6.3.4, see:
+  https://github.com/ros-drivers/pointgrey_camera_driver/issues/28
+* Contributors: Chao Qu, Julius Gelšvartas, Konrad Banachowicz, L0g1x, Mike Purvis
+
 0.11.0 (2014-11-07)
 -------------------
 * Change approach to downloading flycapture SDK.
