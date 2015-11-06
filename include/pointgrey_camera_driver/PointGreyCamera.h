@@ -32,7 +32,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #ifndef _POINTGREYCAMERA_H_
 #define _POINTGREYCAMERA_H_
 
-#include <driver_base/SensorLevels.h> // Dynamic_reconfigure change levels
 #include <sensor_msgs/Image.h> // ROS message header for Image
 #include <sensor_msgs/image_encodings.h> // ROS header for the different supported image encoding types
 #include <sensor_msgs/fill_image.h>
@@ -63,11 +62,20 @@ public:
   * be inspected after this function ends.
   * This function will stop and restart the camera when called on a SensorLevels::RECONFIGURE_STOP level.
   * \param config  camera_library::CameraConfig object passed by reference.  Values will be changed to those the driver is currently using.
-  * \param level driver_base reconfiguration level.  See driver_base/SensorLevels.h for more information.
+  * \param level  Reconfiguration level. See constants below for details.
   *
   * \return Returns true when the configuration could be applied without modification.
   */
   bool setNewConfiguration(pointgrey_camera_driver::PointGreyConfig &config, const uint32_t &level);
+
+  /** Parameters that need a sensor to be stopped completely when changed. */
+  static const uint8_t LEVEL_RECONFIGURE_CLOSE = 3;
+
+  /** Parameters that need a sensor to stop streaming when changed. */
+  static const uint8_t LEVEL_RECONFIGURE_STOP = 1;
+
+  /** Parameters that can be changed while a sensor is streaming. */
+  static const uint8_t LEVEL_RECONFIGURE_RUNNING = 0;
 
   /*!
   * \brief Function that connects to a specified camera.
@@ -129,7 +137,7 @@ public:
   * \param id serial number for the camera.  Should be something like 10491081.
   */
   void setDesiredCamera(const uint32_t &id);
-  
+
   /*!
   * \brief Set parameters relative to GigE cameras.
   *
@@ -151,7 +159,7 @@ public:
 
   void setGain(double &gain);
 
-  void setBRWhiteBalance(uint16_t &blue, uint16_t &red);
+  void setBRWhiteBalance(bool auto_white_balance, uint16_t &blue, uint16_t &red);
 
   uint getGain();
 
@@ -174,7 +182,10 @@ private:
 
   boost::mutex mutex_; ///< A mutex to make sure that we don't try to grabImages while reconfiguring or vice versa.  Implemented with boost::mutex::scoped_lock.
   volatile bool captureRunning_; ///< A status boolean that checks if the camera has been started and is loading images into its buffer.ù
-  
+
+  /// If true, camera is currently running in color mode, otherwise camera is running in mono mode
+  bool isColor_;
+
   // For GigE cameras:
   /// If true, GigE packet size is automatically determined, otherwise packet_size_ is used:
   bool auto_packet_size_;
@@ -257,7 +268,7 @@ private:
   *
   * \return Returns true when the configuration could be applied without modification.
   */
-  bool setWhiteBalance(uint16_t &blue, uint16_t &red);
+  bool setWhiteBalance(bool& auto_white_balance, uint16_t &blue, uint16_t &red);
 
   /*!
   * \brief Gets the current frame rate.
@@ -320,7 +331,7 @@ private:
   * \param packet_size The packet size value to use.
   */
   void setupGigEPacketSize(FlyCapture2::PGRGuid & guid, unsigned int packet_size);
-  
+
   /*!
   * \brief Will configure the packet delay of the GigECamera with the given GUID to a given value.
   *
@@ -332,6 +343,7 @@ private:
   */
   void setupGigEPacketDelay(FlyCapture2::PGRGuid & guid, unsigned int packet_delay);
 
+public:
   /*!
   * \brief Handles errors returned by FlyCapture2.
   *
@@ -339,7 +351,7 @@ private:
   * \param prefix Message that will prefix the obscure FlyCapture2 error and provide context on the problem.
   * \param error FlyCapture2::Error that is returned from many FlyCapture functions.
   */
-  void handleError(const std::string &prefix, FlyCapture2::Error &error) const;
+  static void handleError(const std::string &prefix, const FlyCapture2::Error &error);
 
 };
 
