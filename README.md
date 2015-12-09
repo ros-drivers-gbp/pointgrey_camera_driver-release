@@ -1,3 +1,29 @@
+## pointgrey_camera_driver (indigo) - 0.12.1-1
+
+The packages in the `pointgrey_camera_driver` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release -r indigo -t indigo pointgrey_camera_driver` on `Wed, 09 Dec 2015 14:57:17 -0000`
+
+These packages were released:
+- `image_exposure_msgs`
+- `pointgrey_camera_description`
+- `pointgrey_camera_driver`
+- `statistics_msgs`
+- `wfov_camera_msgs`
+
+Version of package(s) in repository `pointgrey_camera_driver`:
+- upstream repository: https://github.com/ros-drivers/pointgrey_camera_driver.git
+- release repository: https://github.com/ros-drivers-gbp/pointgrey_camera_driver-release.git
+- rosdistro version: `0.11.0-0`
+- old version: `0.12.1-0`
+- new version: `0.12.1-1`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.37`
+
+
 ## pointgrey_camera_driver (jade) - 0.12.1-0
 
 The packages in the `pointgrey_camera_driver` repository were released into the `jade` distro by running `/usr/bin/bloom-release -r jade -t jade pointgrey_camera_driver` on `Fri, 06 Nov 2015 22:24:29 -0000`
