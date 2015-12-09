@@ -36,7 +36,7 @@ tracks:
     last_version: 0.12.1
     name: upstream
     patches: null
-    release_inc: '0'
+    release_inc: '1'
     release_repo_url: null
     release_tag: :{version}
     ros_distro: indigo
