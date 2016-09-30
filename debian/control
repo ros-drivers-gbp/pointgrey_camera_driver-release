@@ -1,0 +1,12 @@
+Source: ros-jade-pointgrey-camera-driver
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), curl, dpkg, libcurl4-openssl-dev, libraw1394-dev, libusb-1.0-0-dev, ros-jade-camera-info-manager, ros-jade-catkin, ros-jade-diagnostic-updater, ros-jade-dynamic-reconfigure, ros-jade-image-exposure-msgs, ros-jade-image-transport, ros-jade-nodelet, ros-jade-roscpp, ros-jade-roslint, ros-jade-sensor-msgs, ros-jade-wfov-camera-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-jade-pointgrey-camera-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libraw1394-dev, libusb-1.0-0-dev, ros-jade-camera-info-manager, ros-jade-diagnostic-updater, ros-jade-dynamic-reconfigure, ros-jade-image-exposure-msgs, ros-jade-image-proc, ros-jade-image-transport, ros-jade-nodelet, ros-jade-roscpp, ros-jade-sensor-msgs, ros-jade-wfov-camera-msgs
+Description: Point Grey camera driver based on libflycapture2.
