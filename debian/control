@@ -1,0 +1,12 @@
+Source: ros-jade-pointgrey-camera-description
+Section: misc
+Priority: extra
+Maintainer: Tony Baltovski <tbaltovski@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jade-pointgrey-camera-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-robot-state-publisher, ros-jade-urdf, ros-jade-xacro
+Description: A series of URDF driver decriptions for Point Grey cameras
