@@ -1,8 +1,0 @@
-ros-jade-pointgrey-camera-description (0.12.1-0utopic) utopic; urgency=high
-
-  * Added description for bumblebee2 and flea3.
-  * Contributors: Tony Baltovski
-
- -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Fri, 06 Nov 2015 05:00:00 -0000
-
-
