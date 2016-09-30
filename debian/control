@@ -1,0 +1,12 @@
+Source: ros-indigo-image-exposure-msgs
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-message-generation, ros-indigo-statistics-msgs, ros-indigo-std-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-indigo-image-exposure-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-message-runtime, ros-indigo-statistics-msgs, ros-indigo-std-msgs
+Description: Messages related to the Point Grey camera driver.
