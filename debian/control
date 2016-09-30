@@ -1,0 +1,12 @@
+Source: ros-kinetic-pointgrey-camera-driver
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), curl, dpkg, libcurl4-openssl-dev, libraw1394-dev, libusb-1.0-0-dev, ros-kinetic-camera-info-manager, ros-kinetic-catkin, ros-kinetic-diagnostic-updater, ros-kinetic-dynamic-reconfigure, ros-kinetic-image-exposure-msgs, ros-kinetic-image-transport, ros-kinetic-nodelet, ros-kinetic-roscpp, ros-kinetic-roslint, ros-kinetic-sensor-msgs, ros-kinetic-wfov-camera-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-pointgrey-camera-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libraw1394-dev, libusb-1.0-0-dev, ros-kinetic-camera-info-manager, ros-kinetic-diagnostic-updater, ros-kinetic-dynamic-reconfigure, ros-kinetic-image-exposure-msgs, ros-kinetic-image-proc, ros-kinetic-image-transport, ros-kinetic-nodelet, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-wfov-camera-msgs
+Description: Point Grey camera driver based on libflycapture2.
