@@ -1,0 +1,38 @@
+ros-lunar-pointgrey-camera-description (0.13.3-0stretch) stretch; urgency=high
+
+
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Tue, 03 Oct 2017 04:00:00 -0000
+
+ros-lunar-pointgrey-camera-description (0.13.2-0stretch) stretch; urgency=high
+
+
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 28 Sep 2017 04:00:00 -0000
+
+ros-lunar-pointgrey-camera-description (0.13.1-0stretch) stretch; urgency=high
+
+
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Wed, 19 Apr 2017 04:00:00 -0000
+
+ros-lunar-pointgrey-camera-description (0.13.0-0stretch) stretch; urgency=high
+
+
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Fri, 17 Mar 2017 04:00:00 -0000
+
+ros-lunar-pointgrey-camera-description (0.12.2-0stretch) stretch; urgency=high
+
+
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Fri, 30 Sep 2016 04:00:00 -0000
+
+ros-lunar-pointgrey-camera-description (0.12.1-0stretch) stretch; urgency=high
+
+  * Added description for bumblebee2 and flea3.
+  * Contributors: Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Fri, 06 Nov 2015 05:00:00 -0000
+
+
