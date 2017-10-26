@@ -1,3 +1,31 @@
+## pointgrey_camera_driver (kinetic) - 0.13.4-0
+
+The packages in the `pointgrey_camera_driver` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release -r kinetic -t kinetic pointgrey_camera_driver` on `Thu, 26 Oct 2017 17:02:56 -0000`
+
+These packages were released:
+- `image_exposure_msgs`
+- `pointgrey_camera_description`
+- `pointgrey_camera_driver`
+- `statistics_msgs`
+- `wfov_camera_msgs`
+
+Version of package(s) in repository `pointgrey_camera_driver`:
+
+- upstream repository: https://github.com/ros-drivers/pointgrey_camera_driver.git
+- release repository: https://github.com/ros-drivers-gbp/pointgrey_camera_driver-release.git
+- rosdistro version: `0.13.2-0`
+- old version: `0.13.2-0`
+- new version: `0.13.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.0`
+- catkin_pkg version: `0.3.8`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## pointgrey_camera_driver (lunar) - 0.13.3-0
 
 The packages in the `pointgrey_camera_driver` repository were released into the `lunar` distro by running `/usr/local/bin/bloom-release pointgrey_camera_driver -t lunar -r lunar` on `Tue, 03 Oct 2017 14:37:25 -0000`
