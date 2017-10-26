@@ -1,0 +1,12 @@
+Source: ros-kinetic-image-exposure-msgs
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-message-generation, ros-kinetic-statistics-msgs, ros-kinetic-std-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-image-exposure-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-message-runtime, ros-kinetic-statistics-msgs, ros-kinetic-std-msgs
+Description: Messages related to the Point Grey camera driver.
