@@ -1,3 +1,31 @@
+## pointgrey_camera_driver (noetic) - 0.15.1-1
+
+The packages in the `pointgrey_camera_driver` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic pointgrey_camera_driver` on `Wed, 12 Jan 2022 16:47:30 -0000`
+
+These packages were released:
+- `image_exposure_msgs`
+- `pointgrey_camera_description`
+- `pointgrey_camera_driver`
+- `statistics_msgs`
+- `wfov_camera_msgs`
+
+Version of package(s) in repository `pointgrey_camera_driver`:
+
+- upstream repository: https://github.com/ros-drivers/pointgrey_camera_driver.git
+- release repository: https://github.com/ros-drivers-gbp/pointgrey_camera_driver-release.git
+- rosdistro version: `0.15.0-1`
+- old version: `0.15.0-1`
+- new version: `0.15.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.24`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## pointgrey_camera_driver (melodic) - 0.14.2-1
 
 The packages in the `pointgrey_camera_driver` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic pointgrey_camera_driver` on `Wed, 12 Jan 2022 15:20:19 -0000`
