@@ -2,6 +2,9 @@
 Changelog for package pointgrey_camera_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.14.2 (2022-01-12)
+-------------------
+
 0.14.1 (2020-05-05)
 -------------------
 * [pointgrey_camera_driver] Added future for ARM builds.
