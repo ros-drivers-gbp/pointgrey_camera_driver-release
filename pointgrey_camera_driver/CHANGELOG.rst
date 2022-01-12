@@ -2,6 +2,9 @@
 Changelog for package pointgrey_camera_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.15.1 (2022-01-12)
+-------------------
+
 0.15.0 (2020-11-05)
 -------------------
 * [pointgrey_camera_driver] Added support for Focal. Updated CI for Noetic.
