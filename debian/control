@@ -1,0 +1,12 @@
+Source: ros-melodic-pointgrey-camera-driver
+Section: misc
+Priority: optional
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), curl, dpkg, libcurl4-openssl-dev, libraw1394-dev, libusb-1.0-0-dev, ros-melodic-camera-info-manager, ros-melodic-catkin, ros-melodic-diagnostic-updater, ros-melodic-dynamic-reconfigure, ros-melodic-image-exposure-msgs, ros-melodic-image-transport, ros-melodic-nodelet, ros-melodic-roscpp, ros-melodic-roslaunch, ros-melodic-roslint, ros-melodic-sensor-msgs, ros-melodic-wfov-camera-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-melodic-pointgrey-camera-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libraw1394-dev, libusb-1.0-0-dev, ros-melodic-camera-info-manager, ros-melodic-diagnostic-updater, ros-melodic-dynamic-reconfigure, ros-melodic-image-exposure-msgs, ros-melodic-image-proc, ros-melodic-image-transport, ros-melodic-nodelet, ros-melodic-roscpp, ros-melodic-sensor-msgs, ros-melodic-stereo-image-proc, ros-melodic-wfov-camera-msgs
+Description: Point Grey camera driver based on libflycapture2.
