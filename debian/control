@@ -1,0 +1,12 @@
+Source: ros-melodic-wfov-camera-msgs
+Section: misc
+Priority: optional
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-message-generation, ros-melodic-sensor-msgs
+Homepage: http://ros.org/wiki/pointgrey_camera_driver
+Standards-Version: 3.9.2
+
+Package: ros-melodic-wfov-camera-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-message-runtime, ros-melodic-sensor-msgs
+Description: Messages related to the Point Grey camera driver.
