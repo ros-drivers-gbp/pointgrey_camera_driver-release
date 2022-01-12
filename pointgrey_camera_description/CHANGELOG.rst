@@ -2,8 +2,10 @@
 Changelog for package pointgrey_camera_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.15.0 (2020-11-05)
+0.14.2 (2022-01-12)
 -------------------
+* Added xacro: to tag calling bumblebee2 xacro, required in noetic
+* Contributors: Luis Camero
 
 0.14.1 (2020-05-05)
 -------------------
